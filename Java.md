@@ -140,7 +140,7 @@ Common practices include using dependency injection, favoring interfaces   over 
  Adhering to SRP enhances maintainability, reduces complexity, and improves code readability. When a class has a single responsibility, it becomes easier to manage changes because modifications are localized to one area of the codebase.
 
 
-LOGICALS
+## LOGICALS
 
 
 ### 34)Take a Number and check whether it is prime or not?
