@@ -29,56 +29,56 @@ public interface SuperAdminActions extends UserActions, AdminActions
 
 ### 5)What is the difference between super and this keywords in Java?
 - Explanation: The super keyword refers to the superclass of the current object, allowing access to superclass methods and constructors. The this keyword refers to the current object instance, used to call other constructors or methods within the same class.
+
 ### 6)Question:Can a Subclass Reference Hold a Superclass Object?
-	-   No, a subclass reference cannot hold a superclass object because the subclass
-	-  may have additional properties or methods not present in the superclass.
-7)Question:What is the difference between extends and implements?
-	    extends is for class inheritance; implements is for implementing interfaces.
-	8)Question: Why is it important to make the fields of the User class private?
-Answer: Making fields private restricts direct access to them, protecting the internal state of the object from unauthorized access and modifications. It ensures that any changes to the fields are controlled and validated.
+-  No, a subclass reference cannot hold a superclass object because the subclass may have additional properties or methods not present in the superclass.
+
+### 7)Question:What is the difference between extends and implements?
+- extends is for class inheritance; implements is for implementing interfaces.
+
+### 8)Question: Why is it important to make the fields of the User class private?
+- Answer: Making fields private restricts direct access to them, protecting the internal state of the object from unauthorized access and modifications. It ensures that any changes to the fields are controlled and validated.
+
+### 9)Question: What is encapsulation and how is it implemented in the User class?
+- Answer: Encapsulation is the bundling of data and methods that operate on that data within a single unit, typically a class. In the User class, encapsulation is implemented by making fields private and providing public getter methods.
+
+### 10)Question: How does encapsulation help in protecting the state of an object?
+- Answer: Encapsulation helps by restricting access to the internal state of an object and exposing only necessary operations through public methods, ensuring that the object's state can only be modified in a controlled manner.
+
+### 11)Question: Explain the difference between compile-time and runtime polymorphism, providing examples from the code.
+- Answer: Compile-time polymorphism (method overloading) occurs when multiple methods have the same name but different parameters. Runtime polymorphism (method overriding) occurs when a subclass provides a specific implementation of a method already defined in its superclass or interface, as seen in the AdminUser and GroupAdmin classes.
 
 
-9)Question: What is encapsulation and how is it implemented in the User class?
-Answer: Encapsulation is the bundling of data and methods that operate on that data within a single unit, typically a class. In the User class, encapsulation is implemented by making fields private and providing public getter methods.
+### 12)Question: Describe the benefits of using polymorphism in software development.
+- Answer: Polymorphism enables flexibility and reusability in code, allowing developers to write more generic and maintainable code. It simplifies the addition of new classes and behaviors without altering existing code.
 
 
-10)Question: How does encapsulation help in protecting the state of an object?
-Answer: Encapsulation helps by restricting access to the internal state of an object and exposing only necessary operations through public methods, ensuring that the object's state can only be modified in a controlled manner.
+### 13)Question: Define polymorphism and explain how it is utilized in the BlogApp class.
+- Answer: Polymorphism allows objects of different classes to be treated as objects of a common superclass or interface. In BlogApp, both UserActions and AdminActions interfaces are used to handle different user types polymorphically in methods like performUserActions and performAdminActions.
 
 
-11)Question: Explain the difference between compile-time and runtime polymorphism, providing examples from the code.
-Answer: Compile-time polymorphism (method overloading) occurs when multiple methods have the same name but different parameters. Runtime polymorphism (method overriding) occurs when a subclass provides a specific implementation of a method already defined in its superclass or interface, as seen in the AdminUser and GroupAdmin classes.
+### 14)Question: Why is method overriding important in object-oriented programming?
+- Answer: Method overriding allows subclasses to provide specific behavior for methods defined in a parent class or interface. It enables polymorphism and promotes a more flexible and reusable design.
 
 
-12)Question: Describe the benefits of using polymorphism in software development.
-Answer: Polymorphism enables flexibility and reusability in code, allowing developers to write more generic and maintainable code. It simplifies the addition of new classes and behaviors without altering existing code.
+### 15)Question: What are the advantages of using abstraction in software design?
+- Answer: Abstraction simplifies complex systems by providing clear interfaces, improves code readability, promotes code reuse, and allows for easier maintenance and scalability.
 
 
-13)Question: Define polymorphism and explain how it is utilized in the BlogApp class.
-Answer: Polymorphism allows objects of different classes to be treated as objects of a common superclass or interface. In BlogApp, both UserActions and AdminActions interfaces are used to handle different user types polymorphically in methods like performUserActions and performAdminActions.
+### 16)Question: Define abstraction and explain its role in the provided code.
+- Answer: Abstraction is the concept of hiding the implementation details and exposing only the essential features of an object. In the provided code, interfaces UserActions and AdminActions define abstract methods without specifying their implementations.
 
 
-14)Question: Why is method overriding important in object-oriented programming?
-Answer: Method overriding allows subclasses to provide specific behavior for methods defined in a parent class or interface. It enables polymorphism and promotes a more flexible and reusable design.
+### 17)Question: How does abstraction help in managing the complexity of the BlogApp?
+- Answer: Abstraction allows developers to focus on high-level interactions without worrying about specific implementations. It reduces complexity by dividing the application into smaller, more manageable pieces with clear interfaces.
 
 
-15)Question: What are the advantages of using abstraction in software design?
-Answer: Abstraction simplifies complex systems by providing clear interfaces, improves code readability, promotes code reuse, and allows for easier maintenance and scalability.
-
-
-16)Question: Define abstraction and explain its role in the provided code.
-Answer: Abstraction is the concept of hiding the implementation details and exposing only the essential features of an object. In the provided code, interfaces UserActions and AdminActions define abstract methods without specifying their implementations.
-
-
-17)Question: How does abstraction help in managing the complexity of the BlogApp?
-Answer: Abstraction allows developers to focus on high-level interactions without worrying about specific implementations. It reduces complexity by dividing the application into smaller, more manageable pieces with clear interfaces.
-
-
-18)Question:What is the difference between == and .equals() method in Java? When would you override .equals()?
-== Operator: Compares object references to check if they point to the same memory location.
+### 18)Question:What is the difference between == and .equals() method in Java? When would you override .equals()?
+- == Operator: Compares object references to check if they point to the same memory location.
 .equals() Method: Compares the actual content of the objects for logical equality.
 Override .equals(): When you need to define what equality means for your class, e.g., for comparing two Person objects based on their id field.
-19)Question:Explain the final keyword in Java. What are its different uses?
+
+### 19)Question:Explain the final keyword in Java. What are its different uses?
 **Answer:**
 - **`final` Class:** Prevents the class from being subclassed.
 - **`final` Method:** Prevents a method from being overridden by subclasses.
