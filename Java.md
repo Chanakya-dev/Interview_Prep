@@ -275,15 +275,15 @@ wait() and notify() are used in producer-consumer problems. In this scenario:
 - The Person Wants to withdrawl here i have applied wait() and will waits until notify was callen
 - The Person wants to deposit this functions will resumes the wait() function by using notify() keyword
 
-### 60)Deadlock:
-What is a deadlock in threads, and how does it occur?
+### 60)What is a deadlock in threads, and how does it occur?
 - Deadlock occurs when two or more threads are blocked indefinitely, each waiting for a resource held by the other. This leads to a situation where none of the threads can proceed because each is holding a resource and waiting for the other to release its resource.
 
   It occurs when:
 - Multiple threads acquire locks on different resources.
 - After acquiring one lock, they wait for each other to release the second resource, creating a circular dependency.
 
-
+### 61)What is the purpose of the yield() method in Java, and how does it work?
+The yield() method hints to the thread scheduler that the current thread is willing to yield its current use of the CPU. It tells the scheduler that if there are other threads with equal priority waiting to run, they should be scheduled. However, there is no guarantee that yielding will result in the thread being paused.
 
 
 
