@@ -88,100 +88,101 @@ Override .equals(): When you need to define what equality means for your class, 
 ### 20)What is the difference between interface and abstract class with regards to multiple inheritance in Java?
 - Interface: Supports multiple inheritance. A class can implement multiple interfaces.
 - Abstract Class: Supports single inheritance. A class can only extend one abstract class.
-### What does the “static” keyword mean ? Can you override private or static methods in Java ? 
+
+### 21) What does the “static” keyword mean ? Can you override private or static methods in Java ? 
 The static keyword denotes that a member variable or method can be accessed, without requiring an instantiation of the class to which it belongs. A user cannot override static methods in Java, because method overriding is based upon dynamic binding at runtime and static methods are statically bound at compile time. A static method is not associated with any instance of a class so the concept is not applicable.
 
 
-22)Can you access non-static variables in a static context ? 
-Answer:
+## 22)Can you access non-static variables in a static context ? 
+
 A static variable in Java belongs to its class and its value remains the same for all its instances. A static variable is initialized when the class is loaded by the JVM. If your code tries to access a non-static variable, without any instance, the compiler will complain, because those variables are not created yet and they are not associated with any instance
 
 
-23)What is a Constructor, Constructor Overloading in Java and Copy-Constructor?
-Answer 
-A constructor gets invoked when a new object is created. Every class has a constructor. In case the programmer does not provide a constructor for a class, the Java compiler (Javac) creates a default constructor for that class. The constructor overloading is similar to method overloading in Java. Different constructors can be created for a single class. Each constructor must have its own unique parameter list. Finally, Java does support copy constructors like C++, but the difference lies in the fact that Java doesn’t create a default copy constructor if you don’t write your own
+### 23)What is a Constructor, Constructor Overloading in Java and Copy-Constructor?
+ A constructor gets invoked when a new object is created. Every class has a constructor. In case the programmer does not provide a constructor for a class, the Java compiler (Javac) creates a default constructor for that class. The constructor overloading is similar to method overloading in Java. Different constructors can be created for a single class. Each constructor must have its own unique parameter list. Finally, Java does support copy constructors like C++, but the difference lies in the fact that Java doesn’t create a default copy constructor if you don’t write your own
 
 
-24)What is the difference between an Interface and an Abstract class ?
- Java provides and supports the creation of both abstract classes and interfaces. Both implementations share some common characteristics, but they differ in the following features: • All methods in an interface are implicitly abstract. On the other hand, an abstract class may contain both abstract and non abstract method
+### 24)What is the difference between an Interface and an Abstract class ?
+Java provides and supports the creation of both abstract classes and interfaces. Both implementations share some common characteristics, but they differ in the following features: • All methods in an interface are implicitly abstract. On the other hand, an abstract class may contain both abstract and non abstract method
 
-25)How can you use interfaces to achieve abstraction, and what are the limitations compared to abstract classes?
+### 25)How can you use interfaces to achieve abstraction, and what are the limitations compared to abstract classes?
 Interfaces achieve abstraction by defining methods that must be implemented by any class that adheres to the interface. Limitations compared to abstract classes include the inability to provide default behavior for methods before Java 8, and interfaces cannot hold state or have constructors.
 
 
-26)What are some common use cases for defining an interface in a Java application?
+### 26)What are some common use cases for defining an interface in a Java application?
 Common use cases for interfaces include defining a common contract for a set of classes, enabling multiple inheritance of behavior, and providing a way to abstract different implementations of the same set of methods.
 
 
-27)Can an abstract class implement an interface in Java? What does this imply for abstraction?
+### 27)Can an abstract class implement an interface in Java? What does this imply for abstraction?
 Yes, an abstract class can implement an interface, which allows the abstract class to provide default implementations for some or all of the interface methods. This implies that abstraction can be used to define common behaviors in an abstract class while still adhering to an interface’s contract.
 
 
-28)What is the difference between abstract classes with concrete methods and interfaces with default methods?
-Abstract classes with concrete methods can provide default behavior and state management, while interfaces with default methods allow for method implementations but cannot manage state. Abstract classes are more flexible for shared behavior, while interfaces focus on defining capabilities.
+### 28)What is the difference between abstract classes with concrete methods and interfaces with default methods?
+- Abstract classes with concrete methods can provide default behavior and state management, while interfaces with default methods allow for method implementations but cannot manage state. 
+- Abstract classes are more flexible for shared behavior, while interfaces focus on defining capabilities.
+
+### 29)Where Have You Used Abstraction Concept in Your Project Explain?
 
 
-29)Where Have You Used Abstraction Concept in Your Project Explain?
-
-
-30)When would you use the protected access modifier over public in a class hierarchy?
+### 30)When would you use the protected access modifier over public in a class hierarchy?
 Protected is used to allow access to subclasses while hiding implementation details from other classes. It is preferable when you want subclasses to have access to certain methods or fields but prevent access from non-related classes.
 
 
-31)What does the Interface Segregation Principle (ISP) state?
- The Interface Segregation Principle asserts that clients should not be forced to depend on interfaces they do not use. In other words, interfaces should be designed to be as specific as possible, so that implementing classes are not burdened with methods they do not need.
+### 31)What does the Interface Segregation Principle (ISP) state?
+ - The Interface Segregation Principle asserts that clients should not be forced to depend on interfaces they do not use. In other words, interfaces should be designed to be as specific as possible, so that implementing classes are not burdened with methods they do not need.
 
 
-32) What are common practices to adhere to the Dependency Inversion Principle?
+### 32) What are common practices to adhere to the Dependency Inversion Principle?
 Common practices include using dependency injection, favoring interfaces   over concrete implementations, and designing abstractions that represent the high-level functionality of the system rather than specific details.
 
 
-33)Why should a class adhere to the Single Responsibility Principle?
+### 33)Why should a class adhere to the Single Responsibility Principle?
  Adhering to SRP enhances maintainability, reduces complexity, and improves code readability. When a class has a single responsibility, it becomes easier to manage changes because modifications are localized to one area of the codebase.
 
 
 LOGICALS
 
 
-34)Take a Number and check whether it is prime or not?
-Case 1:Number should be taken as Scanner.
-Case 2:Logic Should work for both Odd/Even  Numbers Input
+### 34)Take a Number and check whether it is prime or not?
+- Case 1:Number should be taken as Scanner.
+- Case 2:Logic Should work for both Odd/Even  Numbers Input
 
 
-35)Prepare a Logic to Find out whether a Number is Palindrome or Not
-Case 1:Number should be taken as Scanner Input
-Case 2:Number should not be taken as string it should be taken as int
+### 35)Prepare a Logic to Find out whether a Number is Palindrome or Not
+- Case 1:Number should be taken as Scanner Input
+- Case 2:Number should not be taken as string it should be taken as int
 
 
-36)Prepare a Logic to Find out whether a String is Palindrome or not?
-Case 1:String should be taken as scanner input
-Case 2:Include only 2 predetermined functions in String(length(),CharAt())
+### 36)Prepare a Logic to Find out whether a String is Palindrome or not?
+- Case 1:String should be taken as scanner input
+- Case 2:Include only 2 predetermined functions in String(length(),CharAt())
 
 
-37)Prepare a Logic to Reverse an Array?
-Case1:Use Scanner Input for Array Values
-Case 2:Do Not use predetermined functions of Arrays to reverse.
+### 37)Prepare a Logic to Reverse an Array?
+- Case1:Use Scanner Input for Array Values
+- Case 2:Do Not use predetermined functions of Arrays to reverse.
 
 
-38)Write a String Logic to Print Word in a String which contains Prime Count?
-Case 1:Take String Using Scanner 
-Case 2:Return Type should be Boolean value should return Boolean value
-Case 3:Only use Two Functions length() and split()
+### 38)Write a String Logic to Print Word in a String which contains Prime Count?
+- Case 1:Take String Using Scanner 
+- Case 2:Return Type should be Boolean value should return Boolean value
+- Case 3:Only use Two Functions length() and split()
 
 
-39)Write a String Logic to Reverse a String Such That Index of Words should be the same?
-Case 1:Take String Using Scanner
-Case 2:Letters in a String Should be reversed and position of Words should be unchangeable
-Case 3:Use Only split() , length()and Empty() functions in String 
+### 39)Write a String Logic to Reverse a String Such That Index of Words should be the same?
+- Case 1:Take String Using Scanner
+- Case 2:Letters in a String Should be reversed and position of Words should be unchangeable
+- Case 3:Use Only split() , length()and Empty() functions in String 
 
 
-40)Write a Logic to Print a Number is ArmStrong or Not?
-Case 1:Take Input from Scanner
-Case 2:Do not use any predetermined functions 
-Case 3: Number Should Return a Boolean Value
+### 40)Write a Logic to Print a Number is ArmStrong or Not?
+- Case 1:Take Input from Scanner
+- Case 2:Do not use any predetermined functions 
+- Case 3: Number Should Return a Boolean Value
 
 
 =====================================================
+
 41)What is the difference between JDK, JRE, and JVM?
 JDK (Java Development Kit): A full-featured software development kit for Java, including JRE, compilers, debuggers, and documentation tools.
 
