@@ -230,7 +230,58 @@ Iterator allows traversing the collection in one direction and supports remove o
 ### 51)What is the behavior of Set implementations when trying to add a duplicate ?
 All Set implementations prevent duplicate elements. If you attempt to add a duplicate element to a Set, the operation will not change the Set, and the add method will return false.
 
+### 52) What are the different ways to create a thread in Java? How do they differ?
 
+
+- **Extending the Thread class:** You create a new class that extends Thread and override the run() method.
+Implementing the Runnable interface: You create a class that implements the Runnable interface and pass it to a Thread object.
+Differences:
+
+- **Extending Thread:** Limits the ability to extend other classes since Java doesn't support multiple inheritance.
+Implementing Runnable: More flexible as it allows the class to extend another class.
+
+### 53)Explain the lifecycle of a thread in Java. What are the key stages?
+
+The thread lifecycle in Java consists of the following stages:
+- New: The thread is created but not yet started.
+- Runnable: The thread is ready to run and waiting for CPU time.
+- Running: The thread is executing its code.
+- Blocked/Waiting: The thread is waiting for a resource or a signal from another thread.
+- Dead: The thread has finished executing.
+
+### 54)What is the difference between Runnable and Thread classes in Java?
+- Runnable: Is an interface that represents a task to be executed. It is preferred for creating threads since it allows the class to implement multiple interfaces.
+- Thread: Is a class that represents the actual thread of execution. It provides methods to control thread execution like start(), sleep(), etc.
+
+### 55)What is thread synchronization, and why is it important in Java?
+- Thread synchronization ensures that two or more threads don't concurrently access shared resources, leading to data inconsistency. It is important to prevent race conditions and ensure that only one thread accesses a critical section of the code at a time.
+
+### 56)Explain how the synchronized keyword works in Java. How can you use it with methods and blocks?
+- The synchronized keyword in Java ensures that only one thread can execute a method or a block of code at any given time.
+- Synchronized method: If a method is synchronized, only one thread can execute that method for an object instance at a time.
+- Synchronized block: A block inside a method can be synchronized to lock only a part of the method rather than the whole method.
+
+### 57)How do threads communicate with each other in Java?
+Threads in Java communicate using shared variables and inter-thread communication methods like **wait(), notify(), and notifyAll().** These methods are used within synchronized blocks to pause and resume threads based on certain conditions.
+
+### 58)What are wait(), notify(), and notifyAll() methods in Java, and how do they work?
+- wait(): Causes the current thread to release the monitor (lock) and wait until another thread calls notify() or notifyAll().
+- notify(): Wakes up one waiting thread, but doesn't release the lock immediately.
+- notifyAll(): Wakes up all waiting threads. However, only one of them will be able to acquire the lock and proceed.
+
+### 59) Describe a situation where you would use wait() and notify().
+
+wait() and notify() are used in producer-consumer problems. In this scenario:
+- The Person Wants to withdrawl here i have applied wait() and will waits until notify was callen
+- The Person wants to deposit this functions will resumes the wait() function by using notify() keyword
+
+### 60)Deadlock:
+What is a deadlock in threads, and how does it occur?
+- Deadlock occurs when two or more threads are blocked indefinitely, each waiting for a resource held by the other. This leads to a situation where none of the threads can proceed because each is holding a resource and waiting for the other to release its resource.
+
+  It occurs when:
+- Multiple threads acquire locks on different resources.
+- After acquiring one lock, they wait for each other to release the second resource, creating a circular dependency.
 
 
 
