@@ -183,45 +183,52 @@ Common practices include using dependency injection, favoring interfaces   over 
 
 =====================================================
 
-41)What is the difference between JDK, JRE, and JVM?
-JDK (Java Development Kit): A full-featured software development kit for Java, including JRE, compilers, debuggers, and documentation tools.
+### 41)What is the difference between JDK, JRE, and JVM?
+- JDK (Java Development Kit): A full-featured software development kit for Java, including JRE, compilers, debuggers, and documentation tools.
 
 
-JRE (Java Runtime Environment): A package that provides the libraries, Java Virtual Machine (JVM), and other components to run Java applications. It does not include development tools.
+- JRE (Java Runtime Environment): A package that provides the libraries, Java Virtual Machine (JVM), and other components to run Java applications. It does not include development tools.
 
 
-JVM (Java Virtual Machine): The virtual machine that runs Java bytecode. It interprets the compiled Java program and provides the runtime environment for Java applications.
+- JVM (Java Virtual Machine): The virtual machine that runs Java bytecode. It interprets the compiled Java program and provides the runtime environment for Java applications.
 
 
-42)What is a class in Java?
-A class in Java is a blueprint or template for creating objects. It defines a data type by bundling data (fields) and methods (functions) that operate on the data into a single unit. A class can be used to create multiple objects with similar properties and behaviors.
-43) What is the purpose of the ‘this’ keyword in Java?
-this keyword refers to the current instance of the class. It is used to access instance variables, methods, and constructors from within the class.
-44)What is the Cloneable interface?
-Answer: The Cloneable interface indicates that a class supports cloning. Implementing this interface allows objects to be cloned via the clone() method.
-45)What is the difference between ArrayList and LinkedList?
-ArrayList is based on a dynamic array that allows random access. It provides fast iteration and element access but slow insertion and deletion operations (except at the end).
-LinkedList is based on a doubly linked list. It provides better performance for insertion and deletion at any position but slower iteration and random access.	
+### 42)What is a class in Java?
+- A class in Java is a blueprint or template for creating objects. It defines a data type by bundling data (fields) and methods (functions) that operate on the data into a single unit. - A class can be used to create multiple objects with similar properties and behaviors.
 
+### 43) What is the purpose of the ‘this’ keyword in Java?
+- this keyword refers to the current instance of the class. It is used to access instance variables, methods, and constructors from within the class.
 
-46)What is “Set” in Java?
-              A Set is a collection that cannot contain duplicate elements. Its common     implementations  are:
-HashSet: Unordered collection, backed by a hash table.
-LinkedHashSet: Ordered collection, backed by a hash table and a linked list.
-TreeSet: Ordered collection, backed by a red-black tree.
-47)What is Difference between HashSet and TreeSet?
-HashSet is unordered and backed by a hash table. It provides constant-time performance for basic operations (add, remove, contains).
-TreeSet is ordered and backed by a red-black tree. It provides log-time performance for basic operations and maintains the elements in sorted order.
-48)What is the difference between Iterator and ListIterator?
-			Iterator allows traversing the collection in one direction and supports remove operation.ListIterator extends Iterator and allows bidirectional traversal, modification of the list, and obtaining the index of the elements.
-49)What is a Comparator and Comparable in Java?
-Comparable is used to define the natural ordering of objects. It has a compareTo method.
-Comparator is used to define custom orderings. It has a compare method. It can be used when multiple orderings are needed.
-	50)What is the difference between List and Set in terms of Functionality?
-List is an ordered collection that allows duplicate elements and provides positional access to elements.
-Set is an unordered collection that does not allow duplicate elements. It is used when the uniqueness of elements is required, like in membership testing.
-51)What is the behavior of Set implementations when trying to add a duplicate ?
-	 All Set implementations prevent duplicate elements. If you attempt to add a duplicate element to a Set, the operation will not change the Set, and the add method will return false.
+### 44)What is the Cloneable interface?
+- Answer: The Cloneable interface indicates that a class supports cloning. Implementing this interface allows objects to be cloned via the clone() method.
+
+### 45)What is the difference between ArrayList and LinkedList?
+- ArrayList is based on a dynamic array that allows random access. It provides fast iteration and element access but slow insertion and deletion operations (except at the end).
+- LinkedList is based on a doubly linked list. It provides better performance for insertion and deletion at any position but slower iteration and random access.	
+
+### 46)What is “Set” in Java?
+A Set is a collection that cannot contain duplicate elements. Its common implementations are:
+- HashSet: Unordered collection, backed by a hash table.
+- LinkedHashSet: Ordered collection, backed by a hash table and a linked list.
+- TreeSet: Ordered collection, backed by a red-black tree.
+
+### 47)What is Difference between HashSet and TreeSet?
+- HashSet is unordered and backed by a hash table. It provides constant-time performance for basic operations (add, remove, contains).
+- TreeSet is ordered and backed by a red-black tree. It provides log-time performance for basic operations and maintains the elements in sorted order.
+
+### 48)What is the difference between Iterator and ListIterator?
+Iterator allows traversing the collection in one direction and supports remove operation.ListIterator extends Iterator and allows bidirectional traversal, modification of the list, and obtaining the index of the elements.
+
+### 49)What is a Comparator and Comparable in Java?
+- Comparable is used to define the natural ordering of objects. It has a compareTo method.
+- Comparator is used to define custom orderings. It has a compare method. It can be used when multiple orderings are needed.
+
+### 50)What is the difference between List and Set in terms of Functionality?
+- List is an ordered collection that allows duplicate elements and provides positional access to elements.
+- Set is an unordered collection that does not allow duplicate elements. It is used when the uniqueness of elements is required, like in membership testing.
+
+### 51)What is the behavior of Set implementations when trying to add a duplicate ?
+All Set implementations prevent duplicate elements. If you attempt to add a duplicate element to a Set, the operation will not change the Set, and the add method will return false.
 
 
 
