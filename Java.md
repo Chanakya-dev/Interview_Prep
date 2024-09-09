@@ -85,12 +85,10 @@ Override .equals(): When you need to define what equality means for your class, 
 - **`final` Variable:** Makes the variable constant; its value cannot be changed once initialized.
 
 
-20)What is the difference between interface and abstract class with regards to multiple inheritance in Java?
-Answer:
-	Interface: Supports multiple inheritance. A class can implement multiple interfaces.
-	Abstract Class: Supports single inheritance. A class can only extend one abstract class.
-21)What does the “static” keyword mean ? Can you override private or static methods in Java ? 
-Answer:
+### 20)What is the difference between interface and abstract class with regards to multiple inheritance in Java?
+- Interface: Supports multiple inheritance. A class can implement multiple interfaces.
+- Abstract Class: Supports single inheritance. A class can only extend one abstract class.
+### What does the “static” keyword mean ? Can you override private or static methods in Java ? 
 The static keyword denotes that a member variable or method can be accessed, without requiring an instantiation of the class to which it belongs. A user cannot override static methods in Java, because method overriding is based upon dynamic binding at runtime and static methods are statically bound at compile time. A static method is not associated with any instance of a class so the concept is not applicable.
 
 
